@@ -16,5 +16,6 @@ jobs:
   - name: Desplegar
   uses:action-deploy@v1
   run: echo ${{env.USUARIO}}
+  run: echo ${{secrets.REPOSITORIO_SECRETO}}
   with:
   server:production
